@@ -1,12 +1,10 @@
-const readline = require('readline');
-
-const rl = readline.createInterface({
-  input: process.stdin,
-  output: process.stdout
-});
 function Aluno(n,i){
-    this.nome = n   
-    this.idade = i
+  this.nome = n   
+  this.idade = i
+  this.ola = function(){
+      alert("oi, meu nome é " + this.nome + "e eu tenho " + this.idade + " anos")
+  }
 }
-let a1 = new Aluno("Elbston", 17)
+let a1 = new Aluno("Elbston Souza Lima Filho", 17)
 console.log(a1)
+a1.ola()
